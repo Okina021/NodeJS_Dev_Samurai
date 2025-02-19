@@ -105,7 +105,7 @@ class CustomersController {
         const id = Database[customers.length - 1].id + 1;
 
         const newCustomer = { id, name, site };
-        customers.push(newCustomer);
+        Database.push(newCustomer);
 
         return res.status(201).json(newCustomer);
     }
